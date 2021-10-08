@@ -1,0 +1,214 @@
+*{padding:0;margin:0;box-sizing: border-box;}
+a{text-decoration: none; color: black; font-family: "Work Sans",sans-serif; font-size: 12px;}
+p{color: black; font-family: "Work Sans",sans-serif; font-size: 12px;}
+ul{list-style: none;}
+h2{font-family: 'Yantramanav', sans-serif;font-weight: 900; color: #1d1d1d;}
+h3{font-family: 'Yantramanav', sans-serif;font-weight: 700; color: #1d1d1d;}
+
+
+.nav_bar{
+	width: 100%;
+	padding: 1% 0%; 
+	float: left;
+}
+.logo{
+	margin-left: 5%;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 1.5em;
+	font-weight: 900;
+	float: left;
+	cursor: pointers;
+}
+.btn-menu {
+	width: 40px; height: 40px;
+	float: right;
+	text-align: center;
+	color: #1d1d1d;
+	border-radius: 40px;
+	cursor: pointer;
+	background-color: transparent;
+	border: 0px	;
+	transition: background-color 0.5s;
+}
+.menu {display: none;width: 100%;height: 100%; position: fixed; background-color: rgba(0, 0, 0, 0.9); top: 0;left: 0;}
+.btn-close {font-size: 1.5em; color: #fff; float: right; cursor: pointer; margin: 2% 3% 0 0;}
+.menu ul {width: 100%; float: left; text-align: center;}
+.menu li {padding: 1.5%;}
+.menu li a{font-family: 'Yantramanav', sans-serif;font-size: 2em;color: #fff; padding: 1.5% 3%;}
+
+#banner{
+	padding: 30% 0 30% 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+#banner h2{
+	font-size: 2.5em;
+}
+#banner h3,p{
+	margin-top: 2%;
+}
+
+#tecnologias{
+	padding: 20% 0 20% 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#tecnologias_icons{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+#tecnologias_icons i{
+	margin:10% 10% 0 10%;
+	font-size: 3em;
+	text-align: center;
+}
+#tecnologias_desc {
+	padding-top: 5%;
+}
+#projetos_div{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+#projetos_desc{
+	width: 60%;
+	text-align: center;
+	margin: 10% 0 5% 0;
+}
+#projetos{
+	width: 100%;
+	display: flex;
+	gap: 10px 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.projeto{
+	width: 350px;height: 350px; 
+	background: red;
+}
+.projeto:nth-child(1){
+	background: url(../assets/calculadora.html.png)center center/ 350px no-repeat;
+}
+.projeto:nth-child(2){
+	background:url(../assets/holding-red-apple-in-hands.jpg)center center/ 350px no-repeat;
+}
+.projeto:nth-child(3){
+	background:url(../assets/retro-styled-woman-with-a-cigarette.jpg)center center/ 350px no-repeat;
+}
+.projeto:nth-child(3){
+	margin-bottom: 100px;
+}
+#corpo{
+	background: white;
+	position:relative;
+	z-index: 3;
+}
+#footer_desc button{
+	cursor: pointer;
+	width: 140px;
+	height: 45px;
+	background: transparent;
+	border: 2px solid white;
+	border-radius: 50px;
+	color: white;
+	transition: all 0.3s;
+	font-size: 12px;
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+footer{
+	width: 100%;
+	height: 100%;
+	background: rgb(255, 77, 77);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	z-index: 1;
+}
+.footer_div	{
+	position: fixed;
+  	top: 20px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	text-align: center;
+	align-items: center;
+	z-index: 2;
+}
+#footer_profile{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	width: 275px;
+	height: 275px;
+	background: url(../assets/rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpg) center center/ cover no-repeat;
+	border-radius: 50%;
+	
+	top:0;
+}
+#footer_desc{
+	
+}
+.footer_div h3{
+	font-size: 2em;
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 700;
+	letter-spacing: -1px;
+  	line-height: 35px;
+  color: white;
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer_div p{
+	font-size: 12	px;
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+  color: white;
+  padding-bottom: 15px;
+}
+#contatos{
+	width: 100%;
+	height: 80px;
+	display: grid;
+	grid-template-columns: 200px 200px;
+	grid-template-rows: 30px 30px;
+
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+}
+#contatos a{
+	color: white;
+	justify-self: center;
+	cursor: pointer;
+}
+.footer_view h3::selection {
+ 	color: rgb(255, 77, 77); 
+  background: white;
+}
+.footer_view p::selection {
+ 	color: rgb(255, 77, 77); 
+  background: white;
+}
+.footer_view a::selection {
+ 	color: rgb(255, 77, 77); 
+  background: white;
+}
+
+/*
+#footer_desc button:hover{
+	background: white;
+	color: rgb(255, 77, 77);
+}
+*/
